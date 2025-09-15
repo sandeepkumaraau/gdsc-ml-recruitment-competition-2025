@@ -13,6 +13,13 @@ In the late 2060s, oceanic salvage drones dredged up black, coral-like growths w
 The goal is to estimate **CORRUCYSTIC_DENSITY**, a scalar proxy for integrity/stability within possible Obeski neural architectures.
 
 ---
+## Dataset
+
+The competition was with a synthetic dataset (randomized feature/label names; 8–10% missing per column), I used YData Profiling to audit feature quality and detect redundancy. 
+I found 6 duplicate columns and 8 non-informative features; I kept one canonical column, used its duplicates to impute missing values, and dropped 14/46 redundant features. 
+This reduced noise, improved validation performance, and sped up model convergence.
+
+
 
 ## Approach
 
